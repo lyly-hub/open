@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Class Siswa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navbar Section -->
+    <nav>
+        <div class="navbar-container">
+            <h3 class="navbar-title">lily.</h3>
+            <ul class="navbar-list">
+                <li class="menu-list">
+                    <a href="" class="menu-link">About</a>
+                </li>
+                <li class="menu-list">
+                    <a href="" class="menu-link">Skill</a>
+                </li>
+                <li class="menu-list">
+                    <a href="" class="menu-link">Project</a>
+                </li>
+            </ul>
+            <div class="social-media-list">
+                <!-- Facebook -->
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Twitter / X -->
+                <a href="https://x.com" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- YouTube -->
+                <a href="https://youtube.com" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h4 class="hero-welcome">
+                    <span class="emote-title">
+                        ✌️
+                    </span>
+                    <span class="title">
+                        Halo!
+                    </span>
+                </h4>
+                <div class="hero-text-content">
+                    <h4 class="hero-title">
+                        Kenalin, namaku [lily].
+                    </h4>
+                    <h3 class="hero-job-desc">
+                        Aku seorang
+                        <div class="job-title">Web Developer</div>
+                    </h3>
+                    <p class="hero-paragraph">Melalui website portofolio ini, aku ingin membagikan beberapa pengalaman & project yang sudah pernah aku kerjakan</p>
+                </div>
+                <div class="hero-content-img">
+                    <img src="./src/img/image.png" alt="fotonya disini say">
+                </div>
+                <button type="button" class="btn-hero">
+                    <span class="btn-emote-title">📩</span>
+                    Contact Me
+                </button>
+            </div>
+        </section>
+        <!-- about section -->
+        <section class="about-section">
+            <div class="about-container">
+                <h4 class="about-title">about</h4>
+                <p class="about-desc">
+                    Selamat datang di website portofolio saya. Berikut adalah beberapa pengalaman dan project yang sudah pernah aku kerjakan. 
+                </p>
+            </div>
+        </section>
+        <!-- Skill Section -->
+        <section class="skill-section">   
+            <div class="skill-container">
+                <h4 class="skill-title">Skills</h4>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-js"></i>
+            </div>
+        </section>
+        <!-- project section -->
+        <section class="project-section">
+            <div class="project-container">
+                <div class="card-content">
+                    <h5 class="card-title">to do list</h5>
+                    <p class="card-desc">
+                        Aplikasi to do list yang dapat digunakan untuk membuat daftar tugas harian!
+                    </p>
+                </div>
+                <div class="card-content">
+                    <h5 class="card-title">to do list</h5>
+                    <p class="card-desc">
+                        Aplikasi to do list yang dapat digunakan untuk membuat daftar tugas harian!
+                    </p>
+                </div>
+                <div class="card-content"></div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contactus-container">
+                    <h5 class="contactus-title">contact us</h5>
+                    <p class="contactus-desc">
+                        <span class="email">  
+                        Silahkan gunakan email ini untuk menghubungi saya.[watso@gmail.com]
+                        </span>
+                        <span class="no-telp">
+                            Atau silahkan hubungi saya melalui no. telepon ini. [081234567]
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        🚀 Ran. X BEM FTI UBL &copy; 2025
+    </footer>
+    <script>
+        <!-- masukan script disini -->
+        const titlejob = ['UI/UX Designer', 'Web Devoleper'];
+        const jobdesk = document.getElementsByClassName('job-title')[0];
+        let index= 0;
+        
+        setInterval(() => {
+            jobdesk.textContent = titlejob[index];
+            index = (index + 1) % titlejob.length;
+            }, 2000);
+        
+        const navbar = document.querySelector('nav');
+
+        window.addEventListener('scroll', () =>{
+            if(window.scrollY > 1){
+                navbar.classList.add('active');
+            } else {
+                navbar.classList.remove('active');
+            }
+        })
+    </script>
+</body>
+</html>
